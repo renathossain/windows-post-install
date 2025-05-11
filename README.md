@@ -1,7 +1,7 @@
 # windows-post-install
 
-A Windows 11 post-installation script and dotfiles to automate the setup process for Windows 11 and the GlazeWM window manager.
+A Windows 11 post-installation script to automate the setup process.
 
 - Open Powershell as Administrator and run the following:
 - Enable running scripts: `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser`
-- Install & Configure all Programs: `& ".\postinstall.ps1"`
+- Install & Configure all Programs: `.\postinstall.ps1`
