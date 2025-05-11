@@ -1,18 +1,17 @@
+# Install Apps using winget
+winget install eloston.ungoogled-chromium
 winget install Discord.Discord
 winget install ONLYOFFICE.DesktopEditors
+winget install 9P3JFR0CLLL6 # mpv Video Player
+winget install KDE.Okular
+winget install Valve.Steam
+winget install CrystalDewWorld.CrystalDiskInfo
+winget install CrystalDewWorld.CrystalDiskMark
+winget install glzr-io.glazewm
 
 scoop install git
 scoop bucket add extras
 scoop install extras/firefox
-scoop install extras/ungoogled-chromium
-scoop install extras/glazewm
-scoop install extras/mpv
-scoop install extras/okular
-scoop install extras/onlyoffice-desktopeditors
-scoop install extras/crystaldiskinfo
-scoop install extras/crystaldiskmark
-scoop bucket add versions
-scoop install versions/steam
 
 winget upgrade --all
 scoop update *
