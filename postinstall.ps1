@@ -10,5 +10,4 @@ winget install KDE.Okular
 winget install Valve.Steam
 winget install CrystalDewWorld.CrystalDiskInfo
 winget install CrystalDewWorld.CrystalDiskMark
-winget install glzr-io.glazewm
 winget upgrade --all
