@@ -1,5 +1,7 @@
-scoop install git
+winget install Discord.Discord
+winget install ONLYOFFICE.DesktopEditors
 
+scoop install git
 scoop bucket add extras
 scoop install extras/firefox
 scoop install extras/ungoogled-chromium
@@ -9,12 +11,9 @@ scoop install extras/okular
 scoop install extras/onlyoffice-desktopeditors
 scoop install extras/crystaldiskinfo
 scoop install extras/crystaldiskmark
-
 scoop bucket add versions
 scoop install versions/steam
 
-winget install Discord.Discord
-
+winget upgrade --all
 scoop update *
 scoop cleanup *
-winget upgrade --all
