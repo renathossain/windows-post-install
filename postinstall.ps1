@@ -1,4 +1,7 @@
 # Install Apps using winget
+winget install Git.Git
+winget install 7zip.7zip
+winget install Mozilla.Firefox
 winget install eloston.ungoogled-chromium
 winget install Discord.Discord
 winget install ONLYOFFICE.DesktopEditors
@@ -8,11 +11,4 @@ winget install Valve.Steam
 winget install CrystalDewWorld.CrystalDiskInfo
 winget install CrystalDewWorld.CrystalDiskMark
 winget install glzr-io.glazewm
-
-scoop install git
-scoop bucket add extras
-scoop install extras/firefox
-
 winget upgrade --all
-scoop update *
-scoop cleanup *
