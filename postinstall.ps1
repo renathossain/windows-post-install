@@ -1,3 +1,11 @@
+# Set Windows to use UTC to avoid time conflict with Linux
+$registryPath = "HKLM:\SYSTEM\CurrentControlSet\Control\TimeZoneInformation"
+$propertyName = "RealTimeIsUniversal"
+$propertyValue = 1
+if (Test-Path $registryPath) {
+  Set-ItemProperty -Path $registryPath -Name $propertyName -Value $propertyValue -Type DWord
+}
+
 # Install Apps using winget
 winget install Git.Git
 winget install 7zip.7zip
