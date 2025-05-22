@@ -19,5 +19,4 @@ winget install Valve.Steam
 winget install EpicGames.EpicGamesLauncher
 winget install CrystalDewWorld.CrystalDiskInfo
 winget install CrystalDewWorld.CrystalDiskMark
-winget install Nvidia.GeForceExperience
 winget upgrade --all
