@@ -21,3 +21,6 @@ winget install EpicGames.EpicGamesLauncher
 winget install CrystalDewWorld.CrystalDiskInfo
 winget install CrystalDewWorld.CrystalDiskMark
 winget upgrade --all
+
+# Install VSCode extensions
+code --install-extension renathossain.markdown-runner
