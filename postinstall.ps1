@@ -1,3 +1,14 @@
+# Self-elevate script if not running as admin
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+  try {
+    Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs -ErrorAction Stop
+    exit 0
+  } catch {
+    Write-Host "Privilege elevation was cancelled by the user. Exiting..."
+    exit 1
+  }
+}
+
 # Set Windows to use UTC to avoid time conflict with Linux
 $registryPath = "HKLM:\SYSTEM\CurrentControlSet\Control\TimeZoneInformation"
 $propertyName = "RealTimeIsUniversal"
@@ -25,3 +36,7 @@ winget upgrade --all
 # Install VSCode extensions
 & "$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd" --install-extension yzhang.markdown-all-in-one
 & "$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd" --install-extension renathossain.markdown-runner
+
+# Press any key to exit code
+Write-Host "`nInstallation finished. Press any key to exit..."
+[void][System.Console]::ReadKey($true)
