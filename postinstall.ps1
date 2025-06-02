@@ -23,5 +23,5 @@ winget install CrystalDewWorld.CrystalDiskMark
 winget upgrade --all
 
 # Install VSCode extensions
-code --install-extension yzhang.markdown-all-in-one
-code --install-extension renathossain.markdown-runner
+& "$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd" --install-extension yzhang.markdown-all-in-one
+& "$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd" --install-extension renathossain.markdown-runner
