@@ -36,6 +36,8 @@ winget upgrade --all
 # Install VSCode extensions
 & "$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd" --install-extension yzhang.markdown-all-in-one
 & "$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd" --install-extension renathossain.markdown-runner
+& "$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd" --install-extension dbaeumer.vscode-eslint
+& "$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd" --install-extension esbenp.prettier-vscode
 
 # Press any key to exit code
 Write-Host "`nInstallation finished. Press any key to exit..."
