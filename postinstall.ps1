@@ -31,6 +31,7 @@ winget install Valve.Steam
 winget install EpicGames.EpicGamesLauncher
 winget install CrystalDewWorld.CrystalDiskInfo
 winget install CrystalDewWorld.CrystalDiskMark
+winget install LocalSend.LocalSend
 winget upgrade --all
 
 # Install VSCode extensions
