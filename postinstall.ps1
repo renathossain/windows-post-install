@@ -25,6 +25,7 @@ winget install eloston.ungoogled-chromium
 winget install Microsoft.VisualStudioCode
 winget install Discord.Discord
 winget install ONLYOFFICE.DesktopEditors
+winget install VideoLAN.VLC
 winget install 9P3JFR0CLLL6 # mpv Video Player
 winget install KDE.Okular
 winget install Valve.Steam
