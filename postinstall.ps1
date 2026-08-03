@@ -19,6 +19,7 @@ if (Test-Path $registryPath) {
 
 # Install Apps using winget
 winget install Git.Git
+winget install SST.opencode
 winget install 7zip.7zip
 winget install Mozilla.Firefox
 winget install eloston.ungoogled-chromium
