@@ -11,6 +11,8 @@ A Windows 11 post-installation script to automate the setup process.
 
 The script disables VBS/Memory Integrity (required or ThrottleStop cannot write CPU voltage), installs ThrottleStop to `C:\ThrottleStop`, and registers a scheduled task (`ThrottleStop`) that reapplies the undervolt at every logon.
 
+To run only the undervolt setup (without the rest of the post-install), run `.\undervolt.ps1`.
+
 On first setup, ThrottleStop launches for a one-time GUI configuration:
 
 1. Click **FIVR**.
