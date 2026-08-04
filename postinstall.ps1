@@ -42,6 +42,9 @@ winget upgrade --all
 & "$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd" --install-extension dbaeumer.vscode-eslint
 & "$env:LOCALAPPDATA\Programs\Microsoft VS Code\bin\code.cmd" --install-extension esbenp.prettier-vscode
 
+# Undervolt CPU (locked H-series, Intel XTU unsupported: use ThrottleStop)
+& "$PSScriptRoot\undervolt.ps1"
+
 # Press any key to exit code
 Write-Host "`nInstallation finished. Press any key to exit..."
 [void][System.Console]::ReadKey($true)
